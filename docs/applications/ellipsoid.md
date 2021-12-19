@@ -31,6 +31,14 @@ $$
 # Code
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg#button)]( https://colab.research.google.com/github/MerkulovDaniil/optim/blob/master/assets/Notebooks/Ellipsoid.ipynb)
 
+# Remark
+
+Minimum volume ellipsoid problem may not have an accurate analytical solution but similar problem of Minimum volume circle allows for an accurate analytical  solution. This problem is called Sylvester problem of minimum volume circle. Let $ a_1, \dots , a_k  $ be the points in $\mathbb{R}^n$. Given these points we need to find an circle (circle center and radius) , that contains all points with the minimum volume which is equivalent to the minimum radius. The objective function  $ \phi(x_0, r) $ can be constructed as 
+
+$$
+\phi(x_0, r) = \underset{ a_i }{ \text{max} } \left( \| a_i - x_0  \|^2  \right)   \to \text{min}
+$$
+
 # References
 * [Jupyter notebook](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb#scrollTo=W264L1t1p3mF) by A. Katrutsa
 * [https://cvxopt.org/examples/book/ellipsoids.html](CVXOPT documentation)
